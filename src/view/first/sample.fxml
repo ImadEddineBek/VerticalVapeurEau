@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="428.0" prefWidth="593.0" style="-fx-background-color:  #ECF4C9;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.first.Controller">
+   <children>
+      <JFXButton fx:id="btn" layoutX="90.0" layoutY="346.0" onAction="#bringHalf" ripplerFill="#a2a6db" style="-fx-background-color: #d4dbb4;" text="Commencer" textFill="#061614" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="Roboto Slab Regular" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="151.0" layoutY="115.0" text="Validation du GPS " textFill="#061614">
+         <font>
+            <Font name="Roboto Slab Regular" size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="6.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../images/logo.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btn1" layoutX="352.0" layoutY="346.0" onAction="#bringHalf" ripplerFill="#a2a6db" style="-fx-background-color: #d4dbb4;" text="Aide" textFill="#061614" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font name="Roboto Slab Regular" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="54.0" layoutY="262.0" text="Chouiba Zahira">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="182.0" text="par RadioMetre et RadioSondage">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="237.0" text="Realisée par:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="287.0" text="Chelhaoul Khawla">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

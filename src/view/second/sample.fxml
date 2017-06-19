@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="428.0" prefWidth="593.0" style="-fx-background-color: #ECF4C9;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.second.Controller">
+   <children>
+      <JFXButton fx:id="btn" buttonType="RAISED" disable="true" layoutX="444.0" layoutY="353.0" onAction="#bringThird" ripplerFill="#088486" text="Suivant" textFill="#010a09">
+         <font>
+            <Font name="Roboto Slab Regular" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="31.0" layoutY="33.0" text="Choisisser le type du fichie :" textFill="#2c3211" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="Roboto Slab Regular" size="24.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="GPS" layoutX="46.0" layoutY="114.0" selected="true" text="GPS" textFill="#181b0b" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font name="Roboto Slab Regular" size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="fileType" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="RadioSondage" layoutX="46.0" layoutY="151.0" text="RadioSondage" textFill="#181b0b" toggleGroup="$fileType" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font name="Roboto Slab Regular" size="20.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="RadioMetre" layoutX="46.0" layoutY="186.0" text="RadioMetre" textFill="#181b0b" toggleGroup="$fileType" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font name="Roboto Slab Regular" size="20.0" />
+         </font>
+      </JFXRadioButton>
+      <Label layoutX="31.0" layoutY="220.0" text="Choisisser la ville :" textFill="#2c3211" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font name="Roboto Slab Regular" size="24.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="villeCombo" focusColor="#43460e" layoutX="91.0" layoutY="268.0" onAction="#activateCity" promptText="Ville" visibleRowCount="5" AnchorPane.topAnchor="275.0" />
+      <JFXButton fx:id="prec" layoutX="41.0" layoutY="353.0" onAction="#precedant" ripplerFill="#a2a6db" style="-fx-background-color: #d4dbb4;" text="Precedant" textFill="#061614">
+         <font>
+            <Font name="Roboto Slab Regular" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
